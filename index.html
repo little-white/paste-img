@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="paste-img.js"></script>
+</head>
+<body>
+	<script>
+		new PasteImg({
+			element: 'body',
+			callback: function(img, file){
+                document.querySelector('body').appendChild(img);
+				console.log(img, file);
+			}
+		})
+	</script>
+</body>
+</html>
